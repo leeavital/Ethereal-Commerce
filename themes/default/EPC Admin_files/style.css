@@ -1,0 +1,54 @@
+ *{margin: 0px; padding: 0px;}
+
+html{
+	background-color: #DDD;
+	text-align: center;
+}
+
+body{
+	width: 960px;
+	margin: auto;
+	padding: 5px;
+	text-align: left;
+	background-color: #EEE;
+}
+
+
+#left{
+	width: 288px;
+	display: inline;
+	float: left;
+	position: relative;
+	
+	
+}
+
+#right{
+	width: 672px;
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+
+#left ul.toplevel li{display: block; padding: 5px; cursor: pointer;}
+#left ul.lowerlevel{display: none;}
+#left ul.lowerlevel li:hover{background-color: #BBB; cursor: pointer; display: block;}
+#left ul.lowerlevel li{display: block;}
+
+.clearfix:after{
+	display: block;
+	visibility: hidden;
+	content: ".";
+	clear: both;	
+}
+
+
+.clearfix{zoom: 1;}
