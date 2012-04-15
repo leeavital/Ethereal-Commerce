@@ -43,7 +43,7 @@ class EPC_Query{
 		
 		
 		// finish query.
-		echo $query .= " LIMIT 0, $ep_commerce[max_entries_per_page]; ";
+		$query .= " LIMIT 0, $ep_commerce[max_entries_per_page]; ";
 		
 		
 		

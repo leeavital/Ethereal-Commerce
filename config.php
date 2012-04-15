@@ -7,7 +7,7 @@ $ep_commerce = Array();
 
 
 // Set the root directory
-$ep_commerce["root"] = "http://localhost/epc";
+$ep_commerce["root"] = "http://localhost/Ethereal-Commerce";
 
 
 // Set up database informations
@@ -19,7 +19,7 @@ $ep_commerce["user_name"] = "root";
 
 // Theme information. 
 // Change this to change themes.
-$ep_commerce["theme_directory"] = "jilani";
+$ep_commerce["theme_directory"] = "default";
 
 
 $ep_commerce["site_name"] = "Jilani Group USA";

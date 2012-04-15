@@ -108,7 +108,7 @@ EOD;
 
 
 	// USE THIS SPARINGLY
-	function p_category(){
+	function p_category($query=false){
 		global $epc_query;
 		if(!$query){
 			$query = $query;
@@ -116,7 +116,7 @@ EOD;
 		else{
 			$query = $epc_query;
 		}
-		$c_id = $query->current()->c_id;
+		$c_id = $epc_query->current()->c_id;
 		$query = "SELECT `c_name` FROM  `epc_categories` WHERE `c_id`=$c_id;";
 		mysql_query($query) or die(mysql_error());
 	}
