@@ -16,6 +16,8 @@
 		
 		
 		function Uploader($name){
+			
+			print_r($_FILES);
 			global $ep_commerce;	
 			$this->userFileName = $name;
 			$this->name = $_FILES[$this->userFileName]["name"];
@@ -29,6 +31,8 @@
 		
 		function upload(){
 		
+
+		
 			global $ep_commerce;
 		
 			// We will find the unique numerical identifier of this particular file upload. 
@@ -39,7 +43,7 @@
 				+-------------+
 				|           N |
 				+-------------+ 
-			* Where `N` is the numberof the highest numbered upload. */
+			 * Where `N` is the numberof the highest numbered upload. */
 			$uploadNumber = mysql_fetch_array($maxResult);
 			$uploadNumber = $uploadNumber[0] + 1;
 
